@@ -4,12 +4,12 @@
 /* Estiliza o corpo da página */
 body{
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #DDDDDD;
+    background-color: #dcdcdc;
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     justify-content: center; /* Centraliza os itens verticalmente */
     text-align: center;
-    height: 100vh; /* Preenche a altura total da viewport */
+    
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
 }
@@ -17,7 +17,7 @@ body{
 /* Estiliza os títulos h1 */
 h1{
     font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: #ed145b; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
@@ -62,8 +62,8 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem;
-    height: 46vh;
-    overflow-y: auto;
+    /* height: 46vh; */
+    /* overflow-y: auto; */
     margin: 0 auto; /* Centraliza a seção horizontalmente */
     margin-top: 1rem;
     padding: 1rem;
@@ -79,11 +79,11 @@ section button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
-.item-resultado img{
+/* .item-resultado img{
     border-radius: 80px;
     border:5px solid #DDDDDD;
     margin-top: 10px;
-}
+} */
 
 /* Estiliza a lista contendo as redes sociais */
 .lista-horizontal {
@@ -130,11 +130,40 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+ 
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
 
+table{
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Adiciona uma borda nas células */
+    padding: 5px; /* Adiciona um espaçamento interno nas células */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+
+table, th, td {
+    border:1px solid black;
+  }
+
+table th{
+    background-color: #ed145b;
+    color: #F5F7F8;
+}
 
 
+.fiap{
+    color: #ed145b;
+}
 
+.cursos {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cursos ul {
+    flex: 1;
+  }
