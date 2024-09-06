@@ -4,7 +4,7 @@
 /* Estiliza o corpo da página */
 body{
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #dcdcdc;
+    background-color: #EEEDEB;
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     justify-content: center; /* Centraliza os itens verticalmente */
@@ -16,10 +16,15 @@ body{
 
 /* Estiliza os títulos h1 */
 h1{
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #ed145b; /* Cor do texto */
+    font-size: 2.2rem; /* Tamanho da fonte */
+    color: #2F3645; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
+}
+
+h2{
+    font-size: 1.6rem;
+    color: #DC5F00;
 }
 
 /* Estiliza as seções da página */
@@ -47,7 +52,7 @@ section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
+    background-color: #DC5F00; /* Cor de fundo do botão */
     color: #F5F7F8; /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
@@ -55,8 +60,12 @@ section button {
 
 /* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
-    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #F5F7F8; /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+    color: #DC5F00;
+  
+    border: 1px solid #DC5F00;
+    
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -118,7 +127,7 @@ section button:hover {
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
+    color: #DC5F00; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
     text-align: start;
 }
@@ -130,6 +139,7 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
+    margin-top: 85px;
  
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
@@ -146,24 +156,13 @@ th, td {
   }
 
 table, th, td {
-    border:1px solid black;
+    border:1px solid #ddd;
   }
 
 table th{
-    background-color: #ed145b;
-    color: #F5F7F8;
+    background-color: #EEEDEB;
+    color: #2F3645; /* Cor do texto */
 }
 
 
-.fiap{
-    color: #ed145b;
-}
-
-.cursos {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .cursos ul {
-    flex: 1;
-  }
+ 

@@ -10,75 +10,26 @@
 
 <body>
     <header>
-        <h1>FIAP</h1>
-        <h2>Saiba mais sobre nossos cursos</h2>
+        <h1>Explorando os Estados do Brasil</h1>
+        <h2>Descubra informações detalhadas e <br> curiosidades sobre cada região do país</h2>
     </header>
     <!-- a tag main é reponsavel pelo conteúdo principal da página e dentro dela temos os conteudo dividos em parte usando section, article ... -->
     <main>
-
         <section>
+            <img src="img/mapa-brasil-2.png" alt="" width="250" height="200">
 
-            <input type="text" placeholder="Digite o nome do curso ">
-            <button onclick="buscar()">Buscar</button>
+            <input type="text" id="campo-busca" placeholder="Digite o nome do estado desejado" autofocus>
+            <button onclick="buscar()" class="button-busca">Buscar</button>
         </section>
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Cursos</th>
-                       
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Análise e Desenvolvimento de Sistemas</td>
-                    </tr>
-                    <tr>
-                        <td>Data Science Big Data</td>
-                    </tr>
-                    <tr>
-                        <td>Defesa Cibernética Ethical Hacking</td>
-                    </tr>
-                    <tr>
-                        <td>Design Digital</td>
-                    </tr>
-                    <tr>
-                        <td>Engenharia de Software</td>
-                    </tr>
-                    <tr>
-                        <td>Game Development</td>
-                    </tr>
-                    <tr>
-                        <td>Gestão da Tecnologia da Informação</td>
-                    </tr>
-                    <tr>
-                        <td>Inteligência Artificial</td>
-                    </tr>
-                    <tr>
-                        <td>Marketing Digital</td>
-                    </tr>
-                    <tr>
-                        <td>Sistemas de Informação</td>
-                    </tr>
-                    <tr>
-                        <td>Web Design User Experience</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-
 
         <section class="resultados-pesquisa" id="resultados-pesquisa">
-
         </section>
     </main>
 
     <footer>
-        <p>2024 - atletas do Brasil</p>
+        <p>2024 - estados brasileiros</p>
     </footer>
-    <script src="dados-atletas.js"></script>
+    <script src="dados-dos-estados.js"></script>
     <script src="app.js"></script>
 </body>
 
