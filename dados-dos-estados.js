@@ -9,8 +9,10 @@ let estados = [
         idh: 0.654, 
         descricao: "O Maranhão é conhecido por suas belezas naturais, como os Lençóis Maranhenses, e pela rica cultura popular. A capital, São Luís, é famosa pelo seu centro histórico, com construções coloniais e azulejos portugueses.",
         link: "https://cidades.ibge.gov.br/brasil/ma/panorama",
-        map: "https://maps.app.goo.gl/tTfQVD6w6S5jS3yx9"
+        map: "https://maps.app.goo.gl/tTfQVD6w6S5jS3yx9",
+        tags: "centro historico bumba boi barreirinhas barreirinha praia litoral lencóis marenhense patrimonio cultural"
     },
+
     {
         nome: "São Paulo",
         capital: "São Paulo",
@@ -21,8 +23,10 @@ let estados = [
         idh: 0.826, 
         descricao: "São Paulo é o estado mais populoso do Brasil e o principal centro econômico do país. A capital é uma metrópole global, com grande influência nas áreas de finanças, cultura e entretenimento.",
         link: "https://cidades.ibge.gov.br/brasil/sp/panorama",
-        map: "https://maps.app.goo.gl/XgW895EmqgzrxKRi8"
+        map: "https://maps.app.goo.gl/XgW895EmqgzrxKRi8",
+        tags: "avenida paulista museu ibirapuera mercado municipal grande são paulo litoral paulista centro econômico monumentos culturais"
     },
+
     {
         nome: "Rio de Janeiro",
         capital: "Rio de Janeiro",
@@ -33,8 +37,10 @@ let estados = [
         idh: 0.799,
         descricao: "Famoso por suas praias icônicas, como Copacabana e Ipanema, o estado do Rio de Janeiro também abriga o Pão de Açúcar e o Cristo Redentor, além de ser um grande centro cultural e turístico.",
         link: "https://cidades.ibge.gov.br/brasil/rj/panorama",
-        map: "https://maps.app.goo.gl/rm6idfeVRwpafGNk7"
+        map: "https://maps.app.goo.gl/rm6idfeVRwpafGNk7",
+        tags: "cristo redentor pão de açúcar copacabana maracanã carnaval samba lapa praia cultura carioca"
     },
+
     {
         nome: "Bahia",
         capital: "Salvador",
@@ -45,8 +51,10 @@ let estados = [
         idh: 0.714,
         descricao: "A Bahia tem uma forte identidade cultural, sendo o berço do samba de roda, capoeira e do carnaval de Salvador. O estado também é conhecido por suas belas praias e pelo centro histórico de Salvador.",
         link: "https://cidades.ibge.gov.br/brasil/ba/panorama",
-        map: "https://maps.app.goo.gl/o2sUVD4mktesCEAk9"
+        map: "https://maps.app.goo.gl/o2sUVD4mktesCEAk9",
+        tags: "salvador pelourinho carnaval acarajé chapada diamantina litoral baiano candomblé baiana cultura afro-brasileira"
     },
+
     {
         nome: "Paraná",
         capital: "Curitiba",
@@ -57,8 +65,10 @@ let estados = [
         idh: 0.749,
         descricao: "O Paraná é famoso pelas Cataratas do Iguaçu, uma das maiores atrações turísticas do Brasil. A capital, Curitiba, é conhecida por sua qualidade de vida e planejamento urbano.",
         link: "https://cidades.ibge.gov.br/brasil/pr/panorama",
-        map: "https://maps.app.goo.gl/aZjgtVA2XShRuxtq6"
+        map: "https://maps.app.goo.gl/aZjgtVA2XShRuxtq6",
+        tags: "curitiba parque tangua cataratas do iguaçu foz do iguaçu serras paranaenses agricultura cultura paranaense"
     },
+
     {
         nome: "Amazonas",
         capital: "Manaus",
@@ -69,8 +79,10 @@ let estados = [
         idh: 0.674,
         descricao: "O Amazonas abriga a maior floresta tropical do mundo, a Amazônia, e a cidade de Manaus, com seu famoso Teatro Amazonas. O estado é um dos maiores em biodiversidade e recursos naturais.",
         link: "https://cidades.ibge.gov.br/brasil/am/panorama",
-        map: "https://maps.app.goo.gl/t1iMBDjXVVbw3iZw7"
+        map: "https://maps.app.goo.gl/t1iMBDjXVVbw3iZw7",
+        tags: "manaus encontro das águas floresta amazônica cultura indígena festival de parintins fauna biodiversidade"
     },
+
     {
         nome: "Distrito Federal",
         capital: "Brasília",
@@ -81,9 +93,10 @@ let estados = [
         idh: 0.850,
         descricao: "O Distrito Federal é onde está localizada a capital do Brasil, Brasília, conhecida por sua arquitetura moderna, planejada por Oscar Niemeyer e Lúcio Costa. É o centro político do país.",
         link: "https://cidades.ibge.gov.br/brasil/df/panorama",
-        map: "https://maps.app.goo.gl/GbzPme4MzCNDupVY6"
-
+        map: "https://maps.app.goo.gl/GbzPme4MzCNDupVY6",
+        tags: "brasília esplanada dos ministérios congresso nacional palácio do planalto arquitetura moderna"
     },
+
     {
         nome: "Acre",
         capital: "Rio Branco",
@@ -94,9 +107,10 @@ let estados = [
         idh: 0.663,
         descricao: "O Acre é conhecido por sua história ligada à exploração da borracha e à luta ambientalista de Chico Mendes. A capital, Rio Branco, é o centro político e econômico do estado.",
         link: "https://cidades.ibge.gov.br/brasil/ac/panorama",
-        map: "https://maps.app.goo.gl/ph9sandDRVpY3ywm9"
-
+        map: "https://maps.app.goo.gl/ph9sandDRVpY3ywm9",
+        tags: "rio branco floresta amazônica seringueiros história do acre cultura acreana biodiversidade"
     },
+
     {
         nome: "Alagoas",
         capital: "Maceió",
@@ -107,8 +121,10 @@ let estados = [
         idh: 0.631,
         descricao: "Alagoas é um estado do Nordeste conhecido por suas belas praias, como Maragogi e Pajuçara, além de sua rica herança cultural, que inclui o folclore e a culinária típica nordestina.",
         link: "https://cidades.ibge.gov.br/brasil/al/panorama",
-        map: "https://maps.app.goo.gl/hPiNJDpigAqoGDKBA"
+        map: "https://maps.app.goo.gl/hPiNJDpigAqoGDKBA",
+        tags: "maceió maragogi lagoas cultura alagoana jangadas praias paradisíacas litoral nordestino"
     },
+
     {
         nome: "Amapá",
         capital: "Macapá",
@@ -119,8 +135,10 @@ let estados = [
         idh: 0.708,
         descricao: "O Amapá é um dos estados menos populosos do Brasil, com grande parte de seu território coberto pela Floresta Amazônica. Macapá, sua capital, é famosa pela linha do Equador que a corta ao meio.",
         link: "https://cidades.ibge.gov.br/brasil/ap/panorama",
-        map: "https://maps.app.goo.gl/ggVTYwZ7JjsaJWAc8"
+        map: "https://maps.app.goo.gl/ggVTYwZ7JjsaJWAc8",
+        tags: "macapá fortaleza de são josé floresta amazônica linha do equador biodiversidade cultura amapaense"
     },
+
     {
         nome: "Ceará",
         capital: "Fortaleza",
@@ -131,8 +149,10 @@ let estados = [
         idh: 0.682,
         descricao: "Ceará é famoso por suas praias paradisíacas, como Jericoacoara e Canoa Quebrada, além de sua vibrante cultura, incluindo o forró e a literatura de cordel.",
         link: "https://cidades.ibge.gov.br/brasil/ce/panorama",
-        map: "https://maps.app.goo.gl/CEyoF6UMJDPPvmZh7"
+        map: "https://maps.app.goo.gl/CEyoF6UMJDPPvmZh7",
+        tags: "fortaleza jericoacoara praias cearenses jangadas caju chapada do araripe artesanato cultura nordestina"
     },
+
     {
         nome: "Espírito Santo",
         capital: "Vitória",
@@ -143,8 +163,10 @@ let estados = [
         idh: 0.740,
         descricao: "O Espírito Santo é um estado com belas praias e montanhas. Vitória, a capital, é um importante porto e a região de Pedra Azul é conhecida por suas paisagens naturais.",
         link: "https://cidades.ibge.gov.br/brasil/es/panorama",
-        map: "https://maps.app.goo.gl/EioRY2WrcSyqDLTq8"
+        map: "https://maps.app.goo.gl/EioRY2WrcSyqDLTq8",
+        tags: "vila velha vitória congo capixaba moqueca praias capixabas cultura capixaba"
     },
+
     {
         nome: "Goiás",
         capital: "Goiânia",
@@ -155,8 +177,10 @@ let estados = [
         idh: 0.735,
         descricao: "Goiás é um estado do Centro-Oeste conhecido por suas paisagens naturais, incluindo o Parque Nacional da Chapada dos Veadeiros e suas famosas cachoeiras.",
         link: "https://cidades.ibge.gov.br/brasil/go/panorama",
-        map: "https://maps.app.goo.gl/6z45GgRUN4e5WwDU8"
+        map: "https://maps.app.goo.gl/6z45GgRUN4e5WwDU8",
+        tags: "chapada dos veadeiros goiânia cerrado cultura sertaneja culinária goiana arquitetura colonial parque nacional"
     },
+
     {
         nome: "Mato Grosso",
         capital: "Cuiabá",
@@ -167,8 +191,10 @@ let estados = [
         idh: 0.725,
         descricao: "Mato Grosso é um dos estados mais ricos em biodiversidade, abrigando o Pantanal, a maior planície alagada do mundo, e a Chapada dos Guimarães.",
         link: "https://cidades.ibge.gov.br/brasil/mt/panorama",
-        map: "https://maps.app.goo.gl/KoyZyTuELXsWUVb48"
+        map: "https://maps.app.goo.gl/KoyZyTuELXsWUVb48",
+        tags: "pantanal chapada dos guimarães cuiabá cerrado biodiversidade turismo ecológico cultura pantaneira"
     },
+
     {
         nome: "Mato Grosso do Sul",
         capital: "Campo Grande",
@@ -179,8 +205,10 @@ let estados = [
         idh: 0.765,
         descricao: "Mato Grosso do Sul é famoso pelo Pantanal, uma das maiores reservas de vida selvagem do mundo, e pela cidade de Bonito, destino popular para ecoturismo.",
         link: "https://cidades.ibge.gov.br/brasil/ms/panorama",
-        map: "https://maps.app.goo.gl/aDgUFVBFZ3opedHr8"
+        map: "https://maps.app.goo.gl/aDgUFVBFZ3opedHr8",
+        tags: "pantanal campo grande bonito ecoturismo rios cristalinos biodiversidade cultura sul-mato-grossense"
     },
+
     {
         nome: "Minas Gerais",
         capital: "Belo Horizonte",
@@ -191,8 +219,10 @@ let estados = [
         idh: 0.731,
         descricao: "Minas Gerais é conhecido por suas cidades históricas, como Ouro Preto e Tiradentes, além de sua rica tradição culinária e cultural, sendo também um grande produtor de café e minério.",
         link: "https://cidades.ibge.gov.br/brasil/mg/panorama",
-        map: "https://maps.app.goo.gl/G5bNgxBXTzEuhUaS7"
+        map: "https://maps.app.goo.gl/G5bNgxBXTzEuhUaS7",
+        tags: "ouro preto tiradentes montanhas queijos mineiros baroque igrejas históricas cultura mineira"
     },
+
     {
         nome: "Pará",
         capital: "Belém",
@@ -203,8 +233,10 @@ let estados = [
         idh: 0.646,
         descricao: "O Pará abriga a maior parte da floresta amazônica e é famoso por sua culinária única, incluindo pratos como o açaí e o tacacá. Belém, sua capital, é conhecida pelo mercado Ver-o-Peso.",
         link: "https://cidades.ibge.gov.br/brasil/pa/panorama",
-        map: "https://maps.app.goo.gl/88M45WWtrwSw5Qd87"
+        map: "https://maps.app.goo.gl/88M45WWtrwSw5Qd87",
+        tags: "belém ver-o-peso festival de círio de nazaré ilha de marajó floresta amazônica cultura paraense"
     },
+
     {
         nome: "Paraíba",
         capital: "João Pessoa",
@@ -215,8 +247,10 @@ let estados = [
         idh: 0.683,
         descricao: "A Paraíba possui belas praias, como a Ponta do Seixas, ponto mais oriental das Américas, e é rica em cultura, especialmente no artesanato e na música nordestina.",
         link: "https://cidades.ibge.gov.br/brasil/pb/panorama",
-        map: "https://maps.app.goo.gl/gwx865svnpvM75NX9"
+        map: "https://maps.app.goo.gl/gwx865svnpvM75NX9",
+        tags: "joão pessoa campina grande forró litoral paraibano cultura nordestina festas juninas"
     },
+
     {
         nome: "Pernambuco",
         capital: "Recife",
@@ -227,8 +261,10 @@ let estados = [
         idh: 0.673,
         descricao: "Pernambuco é um dos estados mais culturalmente ricos do Brasil, sendo conhecido pelo frevo, maracatu e pelo carnaval do Recife e Olinda, além das praias de Porto de Galinhas.",
         link: "https://cidades.ibge.gov.br/brasil/pe/panorama",
-        map: "https://maps.app.goo.gl/ebJdqGWCxVibod7y9"
+        map: "https://maps.app.goo.gl/ebJdqGWCxVibod7y9",
+        tags: "recife olinda carnaval frevo maracatu praias pernambucanas cultura pernambucana centro histórico"
     },
+
     {
         nome: "Piauí",
         capital: "Teresina",
@@ -239,8 +275,10 @@ let estados = [
         idh: 0.646,
         descricao: "O Piauí é conhecido por seu litoral curto, porém belo, e pela Serra da Capivara, um parque arqueológico que guarda as mais antigas pinturas rupestres das Américas.",
         link: "https://cidades.ibge.gov.br/brasil/pi/panorama",
-        map: "https://maps.app.goo.gl/zRYSzVUsrB51VAeU8"
+        map: "https://maps.app.goo.gl/zRYSzVUsrB51VAeU8",
+        tags: "teresina serra da capivara litoral piauiense cultura nordestina delta do parnaíba arqueologia"
     },
+
     {
         nome: "Rio Grande do Norte",
         capital: "Natal",
@@ -251,8 +289,10 @@ let estados = [
         idh: 0.684,
         descricao: "O Rio Grande do Norte é conhecido por suas praias de dunas, como as de Genipabu, e por ser um dos principais destinos turísticos do Brasil para amantes do sol e mar.",
         link: "https://cidades.ibge.gov.br/brasil/rn/panorama",
-        map: "https://maps.app.goo.gl/aeBewgVztzYTX3Lc7"
+        map: "https://maps.app.goo.gl/aeBewgVztzYTX3Lc7",
+        tags: "natal genipabu dunas praias nordestinas cultura potiguar litoral potiguar"
     },
+
     {
         nome: "Rio Grande do Sul",
         capital: "Porto Alegre",
@@ -263,8 +303,10 @@ let estados = [
         idh: 0.746,
         descricao: "O Rio Grande do Sul é o estado mais ao sul do Brasil, com forte influência da imigração europeia. A serra gaúcha é famosa por sua produção de vinhos e pelas festas tradicionais.",
         link: "https://cidades.ibge.gov.br/brasil/rs/panorama",
-        map: "https://maps.app.goo.gl/sQRN7kQBFnmU5tD38"
+        map: "https://maps.app.goo.gl/sQRN7kQBFnmU5tD38",
+        tags: "porto alegre churrasco gaúcho pampas serra gaúcha gramado canela tradição gaucha chimarrão"
     },
+
     {
         nome: "Rondônia",
         capital: "Porto Velho",
@@ -275,8 +317,10 @@ let estados = [
         idh: 0.690,
         descricao: "Rondônia é um estado localizado na região Norte, com economia baseada no agronegócio e na extração de minérios. Porto Velho, sua capital, é um importante polo econômico da região.",
         link: "https://cidades.ibge.gov.br/brasil/ro/panorama",
-        map: "https://maps.app.goo.gl/cc8hEme5MSbkzWGYA"
+        map: "https://maps.app.goo.gl/cc8hEme5MSbkzWGYA",
+        tags: "porto velho floresta amazônica rio madeira cultura rondoniense biodiversidade mineração"
     },
+
     {
         nome: "Roraima",
         capital: "Boa Vista",
@@ -287,8 +331,10 @@ let estados = [
         idh: 0.707,
         descricao: "Roraima é o estado mais ao norte do Brasil, com paisagens de savana e montanhas. Boa Vista é a única capital brasileira totalmente localizada acima da linha do Equador.",
         link: "https://cidades.ibge.gov.br/brasil/rr/panorama",
-        map: "https://maps.app.goo.gl/JZKeKFsc9RP9suTg9"
+        map: "https://maps.app.goo.gl/JZKeKFsc9RP9suTg9",
+        tags: "boa vista monte roraima serra do tepequém floresta amazônica fronteira cultura indígena"
     },
+
     {
         nome: "Santa Catarina",
         capital: "Florianópolis",
@@ -299,8 +345,10 @@ let estados = [
         idh: 0.774,
         descricao: "Santa Catarina é conhecido por suas praias no litoral e pelas influências da colonização europeia, especialmente alemã e italiana, que se refletem na cultura e gastronomia local.",
         link: "https://cidades.ibge.gov.br/brasil/sc/panorama",
-        map: "https://maps.app.goo.gl/CoU6QNdTJPDnn6hFA"
+        map: "https://maps.app.goo.gl/CoU6QNdTJPDnn6hFA",
+        tags: "florianópolis balneário camboriú praias catarinenses oktoberfest blumenau serra catarinense cultura alemã"
     },
+
     {
         nome: "Sergipe",
         capital: "Aracaju",
@@ -311,8 +359,10 @@ let estados = [
         idh: 0.682,
         descricao: "Sergipe é o menor estado do Brasil, conhecido por suas praias e pelo Cânion do Xingó, um destino turístico cada vez mais procurado no estado.",
         link: "https://cidades.ibge.gov.br/brasil/se/panorama",
-        map: "https://maps.app.goo.gl/JEias2FM3Gm87rAn8"
+        map: "https://maps.app.goo.gl/JEias2FM3Gm87rAn8",
+        tags: "aracaju canindé de são francisco são cristóvão litoral sergipano cultura nordestina"
     },
+    
     {
         nome: "Tocantins",
         capital: "Palmas",
@@ -323,8 +373,8 @@ let estados = [
         idh: 0.699,
         descricao: "Tocantins é o estado mais jovem do Brasil, com belas paisagens naturais como o Jalapão, um dos principais destinos de ecoturismo do país.",
         link: "https://cidades.ibge.gov.br/brasil/to/panorama",
-        map: "https://maps.app.goo.gl/zs8nxnAXVYgiwTCJ7"
-
+        map: "https://maps.app.goo.gl/zs8nxnAXVYgiwTCJ7",
+        tags: "palmas jalapão cerrado turismo de aventura cultura tocantinense"
     }
 
 ]

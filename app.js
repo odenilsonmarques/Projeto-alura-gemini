@@ -1,28 +1,48 @@
+// Função para remover acentos de um texto, permitindo buscas mais precisas,ignorando diferenças de acentuação.
+function removerAcentos(texto){
+    return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
 function buscar() {
     // Obtém a seção HTML onde os resultados da pesquisa serão exibidos
-    let section_resultado = document.getElementById("resultados-pesquisa")
+    let sectionResultado = document.getElementById("resultados-pesquisa")
 
-    let campoBusca = document.getElementById("campo-busca").value
-    
+    let campoBusca = document.getElementById("campo-busca").value.trim()
+
+
     if(!campoBusca){
-        alert('campo de pesquisa vazio. Por favor preencha o campo')
-       return
+        sectionResultado.innerHTML = "<p class='resultadoEstados'>Campo de pesquisa vazio, por favor preencha o campo</p>"
+        return
     }
 
+     campoBusca = removerAcentos(campoBusca.toLowerCase())
+
     // Inicializa uma string vazia para armazenar os resultados formatados
-    let resultadoEstados = ""
+    let resultadoEstados = "";
+
+    //nesse caso essa declaração é para pegar dentro do for em minusculo
+    let nome = "";
+    let capital = "";
+    let regiao = "";
+    let descricao = "";
+    let tags = "";
 
     // Itera sobre cada estado na lista de estados
     for (let estado of estados) {
 
-        if (estado.nome.includes(campoBusca)) {
+        nome = removerAcentos(estado.nome.toLowerCase());
+        capital = removerAcentos(estado.capital.toLowerCase());
+        regiao = estado.regiao.toLowerCase();
+        descricao = estado.descricao.toLowerCase();
+        tags = removerAcentos(estado.tags.toLowerCase());
+
+        if (nome.includes(campoBusca) || capital.includes(campoBusca) || regiao.includes(campoBusca) || descricao.includes(campoBusca) || tags.includes(campoBusca)) {
 
             // Cria uma div para cada estado, formatando os dados do estado em HTML
             resultadoEstados += `
 
             <div class="item-resultado">
                 <h2>${estado.nome}</h2>
-
                 <div style="display: flex; align-items: flex-start;">
                     <table style="width:100%">
                         <thead>
@@ -36,7 +56,7 @@ function buscar() {
                             </tr> 
                             <tr>
                                 <th>População</th>
-                                <td>${estado.populacao.toLocaleString('pt-BR')} habitantes</td>
+                                <td>${estado.populacao.toFixed(4).replace(',', '.')} habitantes</td>
                             </tr>
                             <tr>
                                 <th>Densidade Demográfica</th>
@@ -59,8 +79,8 @@ function buscar() {
                 </p>
                 <ul class="lista-horizontal">
                     <li>
-                        <a href="${estado.map}" target="_blank" title="Instagram"><img
-                                src="img/fixar-mapa.png" alt="Instagram" >
+                        <a href="${estado.map}" target="_blank" title="maps"><img
+                                src="img/fixar-mapa.png" alt="map" >
                         </a>
                     </li>
                 </ul>
@@ -69,8 +89,13 @@ function buscar() {
                     `
         }
     }
+
+    if(!resultadoEstados){
+        resultadoEstados = "<p class='resultadoEstados'>Nenhuma informação encontrada !</p>"
+    }
+
     // Atribui o HTML gerado à seção de resultados
-    section_resultado.innerHTML = resultadoEstados
+    sectionResultado.innerHTML = resultadoEstados
 }
 
 
