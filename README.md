@@ -23,5 +23,11 @@ Este projeto web permite explorar informações detalhadas sobre os estados do B
  - JavaScript
  - Dados em formato JavaScript
 
+## Como Executar
+
+ - Clone o repositório em sua máquina.
+ - Abra o arquivo index.html no seu navegador.
+ - Utilize o campo de busca para explorar informações sobre os estados brasileiros.
+
 
 
